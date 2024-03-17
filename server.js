@@ -41,9 +41,9 @@ app.use(express.urlencoded({ extended: true }))
 //  app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocs))
 //}
 
-//app.get('/', (req, res, next) => {
-//  res.send('Hello from my Express server v2!')
-//})
+app.get('https://p12-server-335r.onrender.com/api/v1/', (req, res, next) => {
+  res.send('Hello from my Express server v2!')
+})
 
 app.listen(PORT, () => {
   console.log(`Server listening on http://localhost:${PORT}`)
